@@ -660,9 +660,15 @@ window.smartsupp||(function(d) {
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="supabase.js"></script>
 <script>
-  window.addEventListener("error", function (event) {
-    alert("JavaScript error: " + event.message);
-  });
+ <script>
+window.addEventListener("error", function(event) {
+  alert(
+    "Error: " + event.message +
+    "\nFile: " + event.filename +
+    "\nLine: " + event.lineno +
+    "\nColumn: " + event.colno
+  );
+});
 </script>
 <script src="app.js"></script>
 </body>
