@@ -1003,7 +1003,7 @@ byId("withdrawForm")?.addEventListener("submit", async event => {
     } catch (error) {
       console.error("NEXORA session restore error:", error);
 
-      appShell?.classList.add("
+      appShell?.classList.add("hidden");
       mobileNav?.classList.add("hidden");
       authScreen?.classList.remove("hidden");
 
