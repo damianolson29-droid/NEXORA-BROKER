@@ -1775,3 +1775,164 @@ button:disabled {
   color: #06130f;
   font-weight: 700;
 }
+
+/* ===== Deposit details: mobile ===== */
+#depositDetailsScreen {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 110px; /* space for bottom nav + chat button */
+}
+
+#depositDetailsScreen *,
+#depositDetailsScreen *::before,
+#depositDetailsScreen *::after {
+  box-sizing: border-box;
+}
+
+.deposit-back-button {
+  font-size: 13px;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+}
+
+.deposit-asset-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.deposit-asset-heading h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.deposit-coin-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.deposit-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.deposit-tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px 6px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.deposit-tab.active {
+  background: #10b981;
+  color: #04110c;
+  font-weight: 600;
+  border-color: #10b981;
+}
+
+.deposit-tab.inactive {
+  opacity: 0.55;
+}
+
+.deposit-network-section {
+  margin-bottom: 16px;
+}
+
+.deposit-network-section label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+#depositNetwork {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.deposit-network-warning {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 8px 0 0;
+}
+
+.deposit-qr-section h3 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+.deposit-qr-frame {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.deposit-qr-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.deposit-address-card {
+  position: relative;
+  clear: both;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.deposit-address-card label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.deposit-address-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.deposit-wallet-address {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.copy-address-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.deposit-warning {
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.deposit-warning strong {
+  font-size: 14px;
+}
+
+.deposit-warning p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 6px 0 0;
+}
